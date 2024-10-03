@@ -15,8 +15,28 @@ body {
 .wrapper-center {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100vh;
+}
 
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    border: none;
+    padding: 20px 20px;
+    background-color: colors.$background-card;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(colors.$background-card, 10%);
+    }
+  }
 }
 
 .card-grid {
