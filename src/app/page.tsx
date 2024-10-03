@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <main className="wrapper-center">
         <div className="card-grid">
-        <div className="card" aria-label="Bikes">
+        <button className="card" aria-label="Link to the page about bikes">
           <FontAwesomeIcon icon={faBicycle} className="icon" aria-hidden="true"/>
-        </div>
-        <div className="card" aria-label="Parking">
+        </button>
+        <button className="card" aria-label="Link to the page about parking">
           <FontAwesomeIcon icon={faSquareParking} className="icon" aria-hidden="true"/>
-        </div>
+        </button>
       </div>
     </main>
   );
