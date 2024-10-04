@@ -2,7 +2,7 @@
 @use '../../colors';
 
 .container {
-    background-color: colors.$backgrounnd-card-bike-station;
+    background-color: colors.$background-card;
     display: flex;
     flex-direction: column;
     border-radius: variables.$border-radius;
