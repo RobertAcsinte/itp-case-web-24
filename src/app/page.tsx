@@ -9,7 +9,7 @@ export default function Home() {
           <Link href="/bikeStations" className="card" aria-label="Link to the page about bikes">
             <FontAwesomeIcon icon={faBicycle} className="icon" aria-hidden="true"/>
           </Link>
-          <Link href="/bikeStations" className="card" aria-label="Link to the page about parking">
+          <Link href="/parking" className="card" aria-label="Link to the page about parking">
             <FontAwesomeIcon icon={faSquareParking} className="icon" aria-hidden="true"/>
           </Link>
       </div>
