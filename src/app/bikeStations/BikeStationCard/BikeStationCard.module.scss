@@ -1,0 +1,13 @@
+@use '../../variables';
+@use '../../colors';
+
+.container {
+    background-color: colors.$backgrounnd-card-bike-station;
+    display: flex;
+    flex-direction: column;
+    border-radius: variables.$border-radius;
+    box-shadow: variables.$shadow;
+    padding: variables.$box-padding;
+    margin: 20px;
+}
+
