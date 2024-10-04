@@ -33,7 +33,7 @@ export default async function Bikes() {
       <main className="wrapper">
         <div className="title-container">
           <Link href="/" aria-label="Link to go back to the home page">
-            <FontAwesomeIcon icon={faArrowLeft} />
+            <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
           </Link>
           <h1>Bike Stations</h1>
         </div>
