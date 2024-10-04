@@ -24,13 +24,15 @@ export default function BikeStationCard({station}: {station: Station}) {
       };
     
     return (
-        <div className={style.container}>
-            <div className={style.titleWrapper}>
-                <h2>{station.name}</h2>
-                <button onClick={() => handleCopy()}>{isCopied ? 'Copied!' : 'Copy to clipboard'}</button>
+        <section>
+            <div className={style.container}>
+                <div className={style.titleWrapper}>
+                    <h2>{station.name}</h2>
+                    <button aria-live="polite" aria-label="Copy station title to clipboard" onClick={() => handleCopy()}>{isCopied ? 'Copied!' : 'Copy to clipboard'}</button>
+                </div>
+                <p><b>Bikes available:</b> {station.bikes_available}</p>
+                <p><b>Total bikes:</b> {station.bikes_in_use + station.bikes_available}</p>
             </div>
-            <p><b>Bikes available:</b> {station.bikes_available}</p>
-            <p><b>Total bikes:</b> {station.bikes_in_use + station.bikes_available}</p>
-        </div>
+        </section>
     );
 }
