@@ -1,3 +1,17 @@
+@mixin phone {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin tablet {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin desktop {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin big-desktop {
+    @media (min-width: 1800px) { @content; }
+  }
+
+
 $max-width: 1280px;
 $shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
 $border-radius: 20px;
