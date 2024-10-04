@@ -1,5 +1,10 @@
+import Link from "next/link";
 import { getData } from "../utils/networkRequests"
 import BikeStationCard from "./BikeStationCard/BikeStationCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons/faArrowLeft";
+
+
 
 type bikeParking = {
   results: {
@@ -26,6 +31,12 @@ export default async function Bikes() {
     
     return (
       <main className="wrapper">
+        <div className="title-container">
+          <Link href="/" aria-label="Link to go back to the home page">
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </Link>
+          <h1>Bike Stations</h1>
+        </div>
         {data.map((stations) => (
           stations.results.map((stationInfo) => (
             <BikeStationCard key={stationInfo.id} station={stationInfo}/>

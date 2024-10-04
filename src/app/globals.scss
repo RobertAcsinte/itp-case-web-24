@@ -88,5 +88,22 @@ button {
   }
 }
 
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  a {
+    width: 30px;
+    margin: 0 10px;
+    color: black;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
 
 
