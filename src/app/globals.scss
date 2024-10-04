@@ -3,6 +3,7 @@
 
 $shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
 $border-radius: 20px;
+$border-radius-button: 50px;
 $box-padding: 20px;
 
 body {
@@ -10,6 +11,20 @@ body {
   padding: 0;
   background-color: colors.$background;
   font-family: 'Roboto', sans-serif;
+}
+
+button {
+  border: none;
+  padding: 20px 20px;
+  background-color: colors.$button-main;
+  box-shadow: $shadow;
+  border-radius: $border-radius-button;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(colors.$button-main, 10%);
+  }
 }
 
 .wrapper-center {
@@ -24,19 +39,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  button {
-    border: none;
-    padding: 20px 20px;
-    background-color: colors.$background-card;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-      background-color: darken(colors.$background-card, 10%);
-    }
-  }
 }
 
 .card-grid {
