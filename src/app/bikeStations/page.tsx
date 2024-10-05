@@ -3,14 +3,10 @@ import { getData } from "../utils/networkRequests"
 import BikeStationCard from "./BikeStationCard/BikeStationCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons/faArrowLeft";
+import { BikeStation } from "./BikeStationType";
 
 type BikeParkings = {
-  results: {
-    id: number;
-    name: string;
-    bikes_in_use: number;
-    bikes_available: number;
-  }[];
+  results: BikeStation[];
 }
 
 const bikeStations = [

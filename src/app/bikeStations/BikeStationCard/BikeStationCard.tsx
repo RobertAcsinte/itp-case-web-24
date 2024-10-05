@@ -2,15 +2,9 @@
 
 import { useState } from 'react';
 import style from './BikeStationCard.module.scss';
+import { BikeStation } from '../BikeStationType';
 
-type Station = {
-    id: number;
-    name: string;
-    bikes_in_use: number;
-    bikes_available: number;
-}
-
-export default function BikeStationCard({station}: {station: Station}) {
+export default function BikeStationCard({station}: {station: BikeStation}) {
     const [isCopied, setIsCopied] = useState(false);
 
     const handleCopy = async () => {
