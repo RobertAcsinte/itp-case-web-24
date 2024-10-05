@@ -2,8 +2,9 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { getData } from "../utils/networkRequests";
+import ParkingCard from "./ParkingCard/ParkingCard";
 
-type parking = {
+type Parkings = {
     results: {
         name: string;
         totalcapacity: number;
@@ -26,7 +27,7 @@ type parking = {
 export default async function Page () {
     const data = await Promise.all(
         parkings.map(async (api) => {
-          const station = await getData<parking>(api);
+          const station = await getData<Parkings>(api);
           return station;
         })
       );
@@ -38,12 +39,12 @@ export default async function Page () {
                     <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
                 </Link>
                 <h1>Parkings in Ghent</h1>
+            </div>
                 {data.map((parkings) => (
                     parkings.results.map((parkingInfo) => (
-                        <div>{parkingInfo.name}</div>
+                        <ParkingCard key={parkingInfo.name} parking={parkingInfo}/>
                     ))
                 ))}
-            </div>
         </main>
     )
 };
