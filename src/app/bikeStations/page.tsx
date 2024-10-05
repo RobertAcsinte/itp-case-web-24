@@ -4,7 +4,7 @@ import BikeStationCard from "./BikeStationCard/BikeStationCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons/faArrowLeft";
 
-type bikeParking = {
+type BikeParkings = {
   results: {
     id: number;
     name: string;
@@ -22,7 +22,7 @@ export default async function Bikes() {
    
     const data = await Promise.all(
       bikeStations.map(async (api) => {
-        const station = await getData<bikeParking>(api);
+        const station = await getData<BikeParkings>(api);
         return station;
       })
     );
