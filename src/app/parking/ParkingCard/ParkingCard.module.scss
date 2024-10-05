@@ -1,0 +1,23 @@
+@use '../../variables';
+@use '../../colors';
+
+.container {
+    background-color: colors.$background-card;
+    display: flex;
+    flex-direction: column;
+    border-radius: variables.$border-radius;
+    box-shadow: variables.$shadow;
+    padding: variables.$box-padding;
+    margin: 10px;
+
+    p {
+        margin: 5px 0px;
+    }
+
+    .detailsLink {
+        color: colors.$text;
+        margin-top: 10px;
+    }
+}
+
+
