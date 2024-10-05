@@ -4,8 +4,6 @@ import BikeStationCard from "./BikeStationCard/BikeStationCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons/faArrowLeft";
 
-
-
 type bikeParking = {
   results: {
     id: number;
