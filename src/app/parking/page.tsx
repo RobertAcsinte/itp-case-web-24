@@ -3,21 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { getData } from "../utils/networkRequests";
 import ParkingCard from "./ParkingCard/ParkingCard";
+import { ParkingDetails } from "./ParkingDetailsType";
 
 type Parkings = {
-    results: {
-        name: string;
-        totalcapacity: number;
-        availablecapacity: number;
-        occupation: number;
-        isopennow: number,
-        categorie: string,
-        description: string,
-        location: {
-            lon: number,
-            lat: number
-        }
-    }[];
+    results: ParkingDetails[];
   }
 
   const parkings = [
