@@ -25,7 +25,7 @@ export default async function Bikes() {
     
     return (
       <main className="wrapper">
-        <div className="title-container">
+        <div className="navbar-title">
           <Link href="/" aria-label="Link to go back to the home page">
             <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
           </Link>

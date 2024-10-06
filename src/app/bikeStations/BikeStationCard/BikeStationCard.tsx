@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import style from './BikeStationCard.module.scss';
 import { BikeStation } from '../BikeStationType';
 
 export default function BikeStationCard({station}: {station: BikeStation}) {
@@ -19,8 +18,8 @@ export default function BikeStationCard({station}: {station: BikeStation}) {
     
     return (
         <section>
-            <div className={style.container}>
-                <div className={style.titleWrapper}>
+            <div className="card">
+                <div className="title-wrapper">
                     <h2>{station.name}</h2>
                     <button aria-live="polite" aria-label="Copy station title to clipboard" onClick={() => handleCopy()}>{isCopied ? 'Copied!' : 'Copy to clipboard'}</button>
                 </div>
