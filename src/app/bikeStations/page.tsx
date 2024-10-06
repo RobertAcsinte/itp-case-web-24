@@ -29,13 +29,17 @@ export default async function Bikes() {
           <Link href="/" aria-label="Link to go back to the home page">
             <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
           </Link>
-          <h1>Bike Stations</h1>
+          <h1 id="bike-stations-heading">Bike Stations</h1>
         </div>
-        {data.map((stations) => (
-          stations.results.map((stationInfo) => (
-            <BikeStationCard key={stationInfo.id} station={stationInfo}/>
-          ))
-        ))}
+        <ul aria-labelledby="bike-stations-heading">
+          {data.map((stations) => (
+            stations.results.map((stationInfo) => (
+              <li>
+                <BikeStationCard key={stationInfo.id} station={stationInfo}/>
+              </li>
+            ))
+          ))}
+        </ul>
       </main>
     )
 };

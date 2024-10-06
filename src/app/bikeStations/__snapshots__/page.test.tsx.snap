@@ -9,7 +9,7 @@ exports[`Snapshot Bike Station Page 1`] = `
         class="wrapper"
       >
         <div
-          class="title-container"
+          class="navbar-title"
         >
           <a
             aria-label="Link to go back to the home page"
@@ -31,76 +31,86 @@ exports[`Snapshot Bike Station Page 1`] = `
               />
             </svg>
           </a>
-          <h1>
+          <h1
+            id="bike-stations-heading"
+          >
             Bike Stations
           </h1>
         </div>
-        <section>
-          <div
-            class="_container_f28ee5"
-          >
-            <div
-              class="_titleWrapper_f28ee5"
-            >
-              <h2>
-                Station 1
-              </h2>
-              <button
-                aria-label="Copy station title to clipboard"
-                aria-live="polite"
+        <ul
+          aria-labelledby="bike-stations-heading"
+        >
+          <li>
+            <section>
+              <div
+                class="card"
               >
-                Copy to clipboard
-              </button>
-            </div>
-            <p>
-              <b>
-                Bikes available:
-              </b>
-               
-              3
-            </p>
-            <p>
-              <b>
-                Total bikes:
-              </b>
-               
-              5
-            </p>
-          </div>
-        </section>
-        <section>
-          <div
-            class="_container_f28ee5"
-          >
-            <div
-              class="_titleWrapper_f28ee5"
-            >
-              <h2>
-                Station 2
-              </h2>
-              <button
-                aria-label="Copy station title to clipboard"
-                aria-live="polite"
+                <div
+                  class="title-wrapper"
+                >
+                  <h2>
+                    Station 1
+                  </h2>
+                  <button
+                    aria-label="Copy station title to clipboard"
+                    aria-live="polite"
+                  >
+                    Copy to clipboard
+                  </button>
+                </div>
+                <p>
+                  <b>
+                    Bikes available:
+                  </b>
+                   
+                  3
+                </p>
+                <p>
+                  <b>
+                    Total bikes:
+                  </b>
+                   
+                  5
+                </p>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section>
+              <div
+                class="card"
               >
-                Copy to clipboard
-              </button>
-            </div>
-            <p>
-              <b>
-                Bikes available:
-              </b>
-               
-              7
-            </p>
-            <p>
-              <b>
-                Total bikes:
-              </b>
-               
-              14
-            </p>
-          </div>
-        </section>
+                <div
+                  class="title-wrapper"
+                >
+                  <h2>
+                    Station 2
+                  </h2>
+                  <button
+                    aria-label="Copy station title to clipboard"
+                    aria-live="polite"
+                  >
+                    Copy to clipboard
+                  </button>
+                </div>
+                <p>
+                  <b>
+                    Bikes available:
+                  </b>
+                   
+                  7
+                </p>
+                <p>
+                  <b>
+                    Total bikes:
+                  </b>
+                   
+                  14
+                </p>
+              </div>
+            </section>
+          </li>
+        </ul>
       </main>
     </div>
   </body>,
@@ -109,7 +119,7 @@ exports[`Snapshot Bike Station Page 1`] = `
       class="wrapper"
     >
       <div
-        class="title-container"
+        class="navbar-title"
       >
         <a
           aria-label="Link to go back to the home page"
@@ -131,76 +141,86 @@ exports[`Snapshot Bike Station Page 1`] = `
             />
           </svg>
         </a>
-        <h1>
+        <h1
+          id="bike-stations-heading"
+        >
           Bike Stations
         </h1>
       </div>
-      <section>
-        <div
-          class="_container_f28ee5"
-        >
-          <div
-            class="_titleWrapper_f28ee5"
-          >
-            <h2>
-              Station 1
-            </h2>
-            <button
-              aria-label="Copy station title to clipboard"
-              aria-live="polite"
+      <ul
+        aria-labelledby="bike-stations-heading"
+      >
+        <li>
+          <section>
+            <div
+              class="card"
             >
-              Copy to clipboard
-            </button>
-          </div>
-          <p>
-            <b>
-              Bikes available:
-            </b>
-             
-            3
-          </p>
-          <p>
-            <b>
-              Total bikes:
-            </b>
-             
-            5
-          </p>
-        </div>
-      </section>
-      <section>
-        <div
-          class="_container_f28ee5"
-        >
-          <div
-            class="_titleWrapper_f28ee5"
-          >
-            <h2>
-              Station 2
-            </h2>
-            <button
-              aria-label="Copy station title to clipboard"
-              aria-live="polite"
+              <div
+                class="title-wrapper"
+              >
+                <h2>
+                  Station 1
+                </h2>
+                <button
+                  aria-label="Copy station title to clipboard"
+                  aria-live="polite"
+                >
+                  Copy to clipboard
+                </button>
+              </div>
+              <p>
+                <b>
+                  Bikes available:
+                </b>
+                 
+                3
+              </p>
+              <p>
+                <b>
+                  Total bikes:
+                </b>
+                 
+                5
+              </p>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <div
+              class="card"
             >
-              Copy to clipboard
-            </button>
-          </div>
-          <p>
-            <b>
-              Bikes available:
-            </b>
-             
-            7
-          </p>
-          <p>
-            <b>
-              Total bikes:
-            </b>
-             
-            14
-          </p>
-        </div>
-      </section>
+              <div
+                class="title-wrapper"
+              >
+                <h2>
+                  Station 2
+                </h2>
+                <button
+                  aria-label="Copy station title to clipboard"
+                  aria-live="polite"
+                >
+                  Copy to clipboard
+                </button>
+              </div>
+              <p>
+                <b>
+                  Bikes available:
+                </b>
+                 
+                7
+              </p>
+              <p>
+                <b>
+                  Total bikes:
+                </b>
+                 
+                14
+              </p>
+            </div>
+          </section>
+        </li>
+      </ul>
     </main>
   </div>,
   "debug": [Function],
