@@ -27,13 +27,17 @@ export default async function Page () {
                 <Link href="/" aria-label="Link to go back to the home page">
                     <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
                 </Link>
-                <h1>Parkings in Ghent</h1>
+                <h1 id="available-parkings">Parkings in Ghent</h1>
             </div>
+            <ul aria-labelledby="available-parkings">
                 {data.map((parkings) => (
                     parkings.results.map((parkingInfo) => (
-                        <ParkingCard key={parkingInfo.name} parking={parkingInfo}/>
+                        <li>
+                            <ParkingCard key={parkingInfo.name} parking={parkingInfo}/>
+                        </li>
                     ))
                 ))}
+            </ul>
         </main>
     )
 };
