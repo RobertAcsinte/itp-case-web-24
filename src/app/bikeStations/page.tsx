@@ -1,27 +1,13 @@
 import Link from "next/link";
-import { getData } from "../utils/networkRequests"
 import BikeStationCard from "./BikeStationCard/BikeStationCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons/faArrowLeft";
-import { BikeStation } from "./BikeStationType";
+import { fetchBikeStations } from "../apiCalls";
 
-type BikeParkings = {
-  results: BikeStation[];
-}
-
-const bikeStations = [
-  'https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-dampoort/records?select=id%2C%20name%2C%20bikes_in_use%2C%20bikes_available',
-  'https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-sint-pieters-m-hendrikaplein/records?select=id%2C%20name%2C%20bikes_in_use%2C%20bikes_available'
-]
 
 export default async function Bikes() {
-   
-    const data = await Promise.all(
-      bikeStations.map(async (api) => {
-        const station = await getData<BikeParkings>(api);
-        return station;
-      })
-    );
+
+   const bikeStations = await fetchBikeStations();
     
     return (
       <main className="wrapper">
@@ -32,8 +18,8 @@ export default async function Bikes() {
           <h1 id="bike-stations-heading">Bike Stations</h1>
         </div>
         <ul aria-labelledby="bike-stations-heading">
-          {data.map((stations) => (
-            stations.results.map((stationInfo) => (
+          {bikeStations.map((station) => (
+            station.results.map((stationInfo) => (
               <li>
                 <BikeStationCard key={stationInfo.id} station={stationInfo}/>
               </li>

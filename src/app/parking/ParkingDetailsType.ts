@@ -11,3 +11,7 @@ export type ParkingDetails = {
         lat: number
     }
 }
+
+export type Parkings = {
+    results: ParkingDetails[];
+}

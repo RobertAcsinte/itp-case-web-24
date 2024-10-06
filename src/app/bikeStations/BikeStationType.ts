@@ -4,3 +4,7 @@ export type BikeStation = {
     bikes_in_use: number;
     bikes_available: number;
 }
+
+export type BikeParkings = {
+    results: BikeStation[];
+  }
