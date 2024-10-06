@@ -33,6 +33,11 @@ button {
   &:hover {
     background-color: lighten(colors.$button-main, 20%);
   }
+
+  &:focus {
+    outline: 2px solid colors.$button-main; /* Ensure a visible focus state */
+    outline-offset: 2px;
+  }
 }
 
 .wrapper-center {
