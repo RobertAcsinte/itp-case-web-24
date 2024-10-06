@@ -20,7 +20,9 @@ export default async function Page(searchParams: { params: { name: string } } ) 
                     <h2>Parking Information</h2>
                     <p><b>Category:</b> {parkingDetails.categorie}</p>
                     <p><b>Description:</b> {parkingDetails.description}</p>
+                    <p><b>Total spots:</b> {parkingDetails.totalcapacity}</p>
                     <p><b>Available spots:</b> {parkingDetails.availablecapacity}</p>
+                    <p><b>Occupied spots:</b> {parkingDetails.occupation}</p>
                     <p><b>Percentage of taken spots from total spots:</b> {((parkingDetails.occupation / parkingDetails.totalcapacity) * 100).toFixed(2)}%</p>
                     <Link
                         href={`https://www.google.com/maps/search/?api=1&query=${parkingDetails.location.lat}%2C${parkingDetails.location.lon}`}

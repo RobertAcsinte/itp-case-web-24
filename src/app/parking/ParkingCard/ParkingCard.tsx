@@ -8,7 +8,7 @@ export default function ParkingCard({parking}: {parking: ParkingDetails}) {
         <section>
             <div className="card">
                 <h2>{parking.name}</h2>
-                <p><b>Capacity:</b> {parking.totalcapacity}</p>
+                <p><b>Total Capacity:</b> {parking.totalcapacity} ({parking.availablecapacity} available)</p>
                 <Link
                     href={{
                         pathname: `parking/${parking.name}/details`,
