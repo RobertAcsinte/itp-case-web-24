@@ -26,8 +26,11 @@ pnpm lint
 
 ## Testing
 Vitest was being used as a test runner. It was the first time I used it, the reason for this choice is because a lot of stuff is already preconfigured. No more configuration hell if you are using Typescript, non js assets (css, img, etc) or ESM issues.  
+  
 RTL was used as a library for testing. (Enzyme is dead and RTL is more about user actions testing that just the code, more realistic)  
+  
 Vitest has access to Jest Assertion API using testing-library/jest-dom dependency, so stuff like .toBeInTheDocument() can be used  
+  
 msw was used to mock api calls. It intercepts the api call and then you can mock the response of that call.  
 
 
