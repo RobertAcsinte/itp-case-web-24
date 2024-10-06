@@ -50,10 +50,13 @@ exports[`Snapshot Parking Spaces Page 1`] = `
                 </h2>
                 <p>
                   <b>
-                    Capacity:
+                    Total Capacity:
                   </b>
                    
                   2490
+                   (
+                  2232
+                   available)
                 </p>
                 <a
                   aria-label="Link to go park details page"
@@ -115,10 +118,13 @@ exports[`Snapshot Parking Spaces Page 1`] = `
               </h2>
               <p>
                 <b>
-                  Capacity:
+                  Total Capacity:
                 </b>
                  
                 2490
+                 (
+                2232
+                 available)
               </p>
               <a
                 aria-label="Link to go park details page"

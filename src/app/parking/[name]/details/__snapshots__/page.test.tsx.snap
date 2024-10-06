@@ -62,10 +62,24 @@ exports[`Snapshot Parking Details Page 1`] = `
             </p>
             <p>
               <b>
+                Total spots:
+              </b>
+               
+              2490
+            </p>
+            <p>
+              <b>
                 Available spots:
               </b>
                
               2232
+            </p>
+            <p>
+              <b>
+                Occupied spots:
+              </b>
+               
+              10
             </p>
             <p>
               <b>
@@ -147,10 +161,24 @@ exports[`Snapshot Parking Details Page 1`] = `
           </p>
           <p>
             <b>
+              Total spots:
+            </b>
+             
+            2490
+          </p>
+          <p>
+            <b>
               Available spots:
             </b>
              
             2232
+          </p>
+          <p>
+            <b>
+              Occupied spots:
+            </b>
+             
+            10
           </p>
           <p>
             <b>
