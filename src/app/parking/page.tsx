@@ -18,8 +18,8 @@ export default async function Page () {
             </div>
             <ul aria-labelledby="available-parkings">
                 {parkingPlaces.map((parkingInfo) => (
-                    <li>
-                        <ParkingCard key={parkingInfo.name} parking={parkingInfo}/>
+                    <li key={parkingInfo.name}>
+                        <ParkingCard parking={parkingInfo}/>
                     </li>
                 ))}
             </ul>

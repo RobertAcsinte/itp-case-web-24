@@ -20,8 +20,8 @@ export default async function Bikes() {
         <ul aria-labelledby="bike-stations-heading">
           {bikeStations.map((station) => (
             station.results.map((stationInfo) => (
-              <li>
-                <BikeStationCard key={stationInfo.id} station={stationInfo}/>
+              <li key={stationInfo.id} >
+                <BikeStationCard station={stationInfo}/>
               </li>
             ))
           ))}
