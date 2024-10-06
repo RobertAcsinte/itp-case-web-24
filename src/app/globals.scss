@@ -128,6 +128,10 @@ button {
   padding: variables.$box-padding;
   margin: 10px;
 
+  h2 {
+    margin-top: 0;
+  }
+
   p {
       margin: 5px 0px;
   }
