@@ -29,12 +29,12 @@ const station = [
 ]
   
 export const restHandlers = [
-http.get('https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-dampoort/records?select=id%2C%20name%2C%20bikes_in_use%2C%20bikes_available', () => {
-    return HttpResponse.json(station[0])
-}),
-http.get('https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-sint-pieters-m-hendrikaplein/records?select=id%2C%20name%2C%20bikes_in_use%2C%20bikes_available', () => {
-    return HttpResponse.json(station[1])
-}),
+    http.get('https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-dampoort/records?select=id%2C%20name%2C%20bikes_in_use%2C%20bikes_available', () => {
+        return HttpResponse.json(station[0])
+    }),
+    http.get('https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-sint-pieters-m-hendrikaplein/records?select=id%2C%20name%2C%20bikes_in_use%2C%20bikes_available', () => {
+        return HttpResponse.json(station[1])
+    }),
 ]
 
 const server = setupServer(...restHandlers)
